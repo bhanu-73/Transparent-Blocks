@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/static/explorerDesign.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <form>
+                <button class="nav1">Explorer</button>
+            </form>
+            <form action="/wallet">
+                <button class="nav2">Wallet</button>
+            </form>
+        </nav>
+        <div class="blocks-container">
+            {% block content %} {% endblock %}
+        </div>
+    </body>
+</html>

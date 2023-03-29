@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/static/walletDesign.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <form action="/">
+                <button class="text-button nav1">Explorer</button>
+            </form>
+            <form>
+                <button class="text-button nav2">Wallet</button>
+            </form>
+        </nav>
+        <div class="wallet-scaffold">
+            <div class="wallet-box">
+                <div class="account-name">
+                    {{ name }}
+                </div>
+                <div class="account-address">
+                    {{ address }}
+                </div>
+                <div class="account-balance">
+                    {{ balance }}
+                </div>
+                <div class="token-symbol">
+                    {{ symbol }}
+                </div>
+                <div class="send-box">
+                    <div class="send-title">
+                        Send
+                    </div>
+                    <form class="send-form" action="/send">
+                        <input name="to" placeholder="To (address)"><br>
+                        <input name="amount" placeholder="Value"><br>
+                        <button class="send-button" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="log-out">
+                    <a class="text-button log-out-button" href="/login-page">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
