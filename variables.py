@@ -196,9 +196,9 @@ abi = [
     }
 ]
 
-contract_address = "0x2143B5a1cB16320360800846005a6eC6D2b92258"
+contract_address = ""
 
 logged_in = False
 
-current_account_name = "Bhanu"
-current_account_address = "0x8D39E270faAA862fF9F3ea13D9b88FdDc820FFf1"
+current_account_name = ""
+current_account_address = ""
